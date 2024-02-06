@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    
+    /* border: 1px solid grey; */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    border: 1px solid #260564;
+    width: 100%;
+    height: 907px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-color: #1f2937;
+    justify-content: center;
+}
+
+.calc-shape {
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    background-color: #d1b0df;
+    box-shadow: 3px 3px 10px   rgb(25, 1, 27);
+
+}
+
+.result {
+    width: 98%;
+    padding: 10px;
+    
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    border: 1px solid #040e1d;
+    box-shadow: 3px 3px 10px   rgb(25, 1, 27);
+    background-color: rgb(155, 137, 114);
+}
+
+#selected-num {
+    
+    align-self: flex-end;
+    font-size: 36px;
+    position: absolute;
+    font-family: sans-serif;
+    top: 23%;
+}
+
+#operations {
+    align-self: flex-end;
+    position: absolute;
+    top: 20%;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+.clear-delete {
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+
+}
+
+#clear {
+    border: none;
+    width: 165px;
+    box-shadow: 3px 3px 10px   rgb(25, 1, 27);
+    height: 60px;
+    background-color: rgb(13, 60, 216);
+    color: wheat;
+    font-family:cursive;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #5f0101;
+    transition: background-color 0.4s ease;
+}
+
+#delete {
+    border: none;
+    width: 165px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 10px   rgb(25, 1, 27);
+    border: 1px solid #5f0101;
+    height: 60px;
+    font-size: 19px;
+    font-weight: bold;
+    color: wheat;
+    font-family:cursive;
+    background-color: rgb(116, 26, 26);
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#delete:hover , #clear:hover {
+    background-color: rgb(112, 117, 66);
+}
+
+.buttons {
+    width: 100%;
+    height: 350px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttons > button {
+    width: 78px;
+    height: 70px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px   rgb(25, 1, 27);
+    cursor: pointer;
+    border: 1px solid #5f0101;
+    background-color: rgb(224, 224, 199);
+    transition: background-color 0.4s ease;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: cursive;
+}
+
+#division , #fraction , #add, #minus, #multiply {
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.buttons > button:hover {
+    background-color: rgb(150, 150, 73);
+    
+}
